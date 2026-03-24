@@ -28,4 +28,4 @@ Drag-and-drop is implemented using native HTML drag events. The task ID is store
 ## Lighthouse Screenshot
 
 
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/958fdc15-540d-4037-bd5c-0211052e5e04" />
+
