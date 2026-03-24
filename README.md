@@ -31,3 +31,12 @@ Drag-and-drop is implemented using native HTML drag events. The task ID is store
 
 ![Lighthouse](./lighthouse.png)
 
+## Explanation
+
+The hardest UI part in this project was implementing drag and drop between columns without breaking the layout. When dragging a task, the column height changed and other cards shifted. To avoid this, I kept a placeholder space while dragging so the layout stays stable. After dropping, the task status updates and the card moves to the new column.
+
+Drag and drop is implemented using native HTML drag events. The task id is stored during drag and updated when dropped into another column. This keeps the implementation simple and avoids extra libraries.
+
+For performance, tasks are shown inside scrollable columns so only visible items are rendered. This helps when there are many tasks. Zustand is used for state management so all views (Kanban, List, Timeline) share the same data and update together.
+
+If I had more time, I would improve drag preview styling and add keyboard support for accessibility.
